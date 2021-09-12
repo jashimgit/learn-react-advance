@@ -1,4 +1,4 @@
-import WithCounter from '../HOC/WithCounter';
+// import WithCounter from '../HOC/WithCounter';
 
 const ClickCounter = (props) => {
     const { count, increseCount } = props;
@@ -9,4 +9,6 @@ const ClickCounter = (props) => {
     );
 };
 
-export default WithCounter(ClickCounter);
+export default ClickCounter;
+
+// export default WithCounter(ClickCounter);
