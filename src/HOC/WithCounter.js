@@ -18,7 +18,15 @@ const WithCounter = (OriginalComponent) => {
             );
         }
     }
+    NewComponent.displayName = `WithCounter(${getDisplayName(OriginalComponent)})`
+
+
     return NewComponent;
 };
 
 export default WithCounter;
+
+
+function getDisplayName(OriginalComponent) {
+    return OriginalComponent.displayName || OriginalComponent.name || 'Component';
+}
