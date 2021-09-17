@@ -7,21 +7,25 @@ import HoverCounter from './component/HoverCounter';
 
 function App() {
     return (
-        <div>
-            {/* <Clock /> */}
-            {/* <Forms /> */}
-            <h3>React Learning </h3>
-            <br />
-            {/* <ClickCounter /> */}
-            {/* <HoverCounter /> */}
+        <div className='container'>
+            <h3>React Render Props pattern </h3>
+
             <Counter
-                render={(count, increseCount) => (
-                    <ClickCounter count={count} increseCount={increseCount} />
+                render={(count, increseCount, decreseCount) => (
+                    <ClickCounter
+                        count={count}
+                        increseCount={increseCount}
+                        
+                    />
                 )}
             />
             <Counter
-                render={(count, increseCount) => (
-                    <HoverCounter count={count} increseCount={increseCount} />
+                render={(count, increseCount, decreseCount) => (
+                    <HoverCounter
+                        count={count}
+                        increseCount={increseCount}
+
+                    />
                 )}
             />
         </div>
