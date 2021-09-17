@@ -24,7 +24,7 @@ function counterReducer(state, action) {
 function App() {
     const [state, dispatch] = useReducer(counterReducer, initialState);
     return (
-        <div>
+        <div className="container">
             <h3>useReducer() hook </h3>
             <hr />
             {/* <Counter /> */}
